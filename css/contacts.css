@@ -1,0 +1,109 @@
+.contacts {
+    margin-bottom: 0;
+}
+
+.contacts__container {
+    display: flex;
+}
+
+.contacts__column-left {
+    flex: 0 0 35.5%;
+    margin-left: auto;
+    border-top: var(--gray-border);
+    border-right: var(--gray-border);
+}
+
+.contacts__content {
+    padding: 124px 122px 124px 50px;
+    margin-left: auto;
+    max-width: 572px;
+    display: flex;
+    flex-direction: column;
+}
+/* Address */
+.contacts__address {
+    margin-bottom: 33px;
+}
+
+.address {
+    display: flex;
+    flex-direction: column;
+    font-style: normal;
+}
+
+.address__showroom {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.contacts__form {
+    margin-bottom: 40px;
+}
+
+/* Callback */
+
+.callback {
+    display: flex;
+    flex-direction: column;
+}
+
+.callback__heading {
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+
+.callback__item {
+    margin-bottom: 23px;
+    padding: 4px 24px;
+    border: 1px solid #333333;
+    border-radius: 100px;
+}
+
+.callback__item::placeholder {
+    color: var(--gray);
+}
+
+.callback__btn {
+    align-self: start;
+}
+
+/* Contact us */
+
+.contact-us__heading {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.contact-us__items-container {
+    display: flex;
+    margin-left: -5px;
+}
+
+.contact-us__item {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    background-repeat: no-repeat;
+    background-size: 40px 40px;
+    background-position: 50% 50%;
+}
+
+.contact-us__whatsapp {
+    background-image: url('../img/whatsapp.svg');
+}
+
+.contact-us__telegram {
+    background-image: url('../img/telegram.svg');
+}
+
+/* Map */
+
+.contacts__map {
+    flex: 0 0 64.5%;
+
+    background: url('../img/gallery/gal-bg.jpg');
+    background-size: cover;
+    background-position: 50% 0;
+}

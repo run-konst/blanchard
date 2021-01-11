@@ -1,0 +1,130 @@
+/* Header */
+
+.catalog__header {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.catalog__country {
+    margin-left: 31px;
+}
+
+.country {
+    display: flex;
+}
+
+.country__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.country__item {
+    width: 66px;
+    height: 66px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 46px 46px;
+}
+
+.country__item_active {
+    border: 2px solid var(--purple);
+}
+
+.country__france {
+    background-image: url('../img/catalog/france.svg');
+}
+
+.country__german {
+    background-image: url('../img/catalog/german.svg');
+}
+
+.country__italy {
+    background-image: url('../img/catalog/italy.svg');
+}
+
+.country__russia {
+    background-image: url('../img/catalog/russia.svg');
+}
+
+.country__belgium {
+    background-image: url('../img/catalog/belgium.svg');
+}
+
+/* Text and columns */
+
+.catalog__text {
+    max-width: 1080px;
+    margin-bottom: 50px;
+}
+
+.catalog__content {
+    display: flex;
+}
+
+.catalog__column-1 {
+    flex: 0 0 calc(50% - 50px);
+    margin-right: 50px;
+}
+
+.catalog__column-2 {
+    flex: 0 0 50%;
+}
+ /* Painter block */
+.painter {
+    display: flex;
+    flex-direction: column;
+}
+
+.painter__img {
+    margin-bottom: 30px;
+    width: 100%;
+    height: auto;
+}
+
+.painter__name {
+    margin-bottom: 15px;
+    font-size: 24px;
+    line-height: 33px;
+}
+
+.painter__years {
+    margin-bottom: 10px;
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--gray);
+}
+
+/* Year list */
+
+.year-list__item {
+    border-top: var(--gray-border);
+}
+
+.year-list__item:last-child {
+    border-bottom: var(--gray-border);
+}
+
+.year-list__years {
+    display: block;
+    padding-top: 37px;
+    padding-bottom: 44px;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 600;
+}
+
+.year-list__painters {
+    columns: 3;
+    padding: 25px 0;
+    border-top: 1px solid var(--purple);
+    border-bottom: 1px solid var(--purple);
+}
+
+.year-list__painter {
+    cursor: pointer;
+}
+
+.year-list__painter_active {
+    font-weight: 600;
+    color: var(--purple);
+}

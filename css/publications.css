@@ -1,0 +1,108 @@
+.publications {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    color: white;
+    background: url('../img/publications/pub-bg.jpg') no-repeat;
+    background-size: cover;
+    background-position: 50% 0;
+}
+
+.publications__container {
+    display: flex;
+    color: white;
+}
+
+/* Column 1 */
+
+.publications__column-1 {
+    flex: 0 0 25%;
+    margin-right: 50px;
+}
+
+.publications__categories {
+    margin-bottom: 32px;
+}
+
+.categories__heading {
+    font-weight: 700;
+}
+
+.categories__item {
+    display: block;
+}
+
+/* Price */
+
+.price-filter__heading {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.price-input {
+    display: flex;
+    max-width: 341px;   
+    padding: 0 19px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 6px;
+}
+
+.price-input__label {    
+    padding: 3px 0;
+    background-color: transparent;
+}
+
+.price-input__input {
+    padding: 3px 10px;
+    margin: 0 11px;
+    max-width: 82px;
+    background: rgba(157, 92, 208, 0.5);
+}
+
+/* Publications slider */
+
+.publications__column-2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 0 75%;
+    margin-right: -50px;
+}
+
+.publications__item {
+    flex: 0 0 calc(33.333% - 50px);
+    margin-right: 50px;
+}
+
+.publication__img {
+    margin-bottom: 23px;
+    width: 100%;
+    height: auto;
+}
+
+.publication__details {
+    display: flex;    
+}
+
+.publication__description {
+    margin-right: auto;
+    margin-bottom: 15px;
+}
+
+.publication__name {
+    line-height: 22px;
+    font-weight: 700;
+}
+
+.publication__author {
+    line-height: 22px;
+}
+
+.publication__price {
+    font-style: italic;
+    line-height: 22px;
+}
+
+.publication__btn {
+    padding: 8px 14px;
+    font-size: 16px;
+    line-height: 22px;
+}

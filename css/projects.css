@@ -1,0 +1,44 @@
+.projects__text {
+    max-width: 1080px;
+    margin-bottom: 25px;
+}
+
+.partners__heading {
+    margin-bottom: 23px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.partners__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.projects__link {
+    font-weight: 600;
+    color: var(--purple);
+}
+
+/* Partner cards */
+
+.partners__item {
+    width: 450px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: var(--gray-border);
+}
+
+.partners__img {
+    filter: grayscale(1);
+    opacity: 0.3;
+    transition: filter 0.2s ease-in,
+    opacity 0.2s ease-in;
+}
+
+
+.partners__item:hover .partners__img {
+    filter: none;
+    opacity: 1;
+}

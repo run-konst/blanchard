@@ -1,0 +1,58 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+
+  .hidden {
+      display: none;
+  }
+
+  .visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;      
+  }
+  /*
+  h1, h2, h3, h4, h5, h6, ul, p, input, textarea, button {
+      margin: 0;
+      padding: 0;
+  }
+  */
+  input, textarea, button {
+      color: inherit;
+      font: inherit;
+  }
+
+    input::placeholder, textarea::placeholder {
+      color: inherit;
+      font: inherit;
+  }
+
+  textarea {
+      resize: none;
+  }
+  
+  button {
+      background-color: transparent;
+      cursor: pointer;
+  }
+  
+  *:focus {
+      outline: 2px solid black;
+  }
+  
+  li {
+      list-style: none;
+  }
+  
+  a {
+      text-decoration: none;
+      color: inherit;
+  }

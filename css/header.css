@@ -1,0 +1,272 @@
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: white;
+    font-size: 18px;
+    line-height: 24.5px;
+}
+
+.header__top {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: black;
+}
+
+.header__container {
+    display: flex;
+}
+
+.header__logo {
+    margin-right: 179px;
+}
+
+.main-nav {
+    display: flex;
+    font-weight: 600;
+}
+
+.header__nav {
+    margin-right: auto;
+}
+
+.main-nav__list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-nav__item {
+    display: flex;
+}
+
+.main-nav__item:not(:last-child) {
+    margin-right: 62.5px;
+}
+
+.main-nav__link {
+    display: flex;
+    align-items: center;
+    color: white;
+    transition: color .2s;
+}
+
+.main-nav__link:hover {
+    color: var(--purple-lighter);
+}
+
+.main-nav__link:active {
+    color: var(--purple-darker);
+}
+
+/* Login button */
+
+.header__login {
+    padding: 0;
+    padding-left: 20px;
+    background: url('../img/header/header__login-bg.svg') no-repeat left 0 center;
+    border: none;
+    transition: color .2s, background-image .3s ;
+}
+
+.header__login:hover {
+    color: var(--purple-lighter);
+    background-image: url('../img/header/header__login-bg_hover.svg');
+}
+
+.header__login:active {
+    color: var(--purple-darker);
+    background-image: url('../img/header/header__login-bg_active.svg');
+}
+
+/* Bottom menu */
+
+.header__bottom {
+    padding-top: 23px;
+    padding-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.alt-nav {
+    display: flex;
+}
+
+.alt-nav__list {
+    margin: 0;
+    padding: 0;
+    margin-left: -2px;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.alt-nav__item:not(:last-child) {
+    margin-right: 101px;
+}
+
+.alt-nav__btn {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.alt-nav__btn::after {
+    content: '';
+    width: 7px;
+    height: 7px;
+    margin-left: 6px;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+    transform: rotate(45deg);
+}
+
+.alt-nav__btn:hover {
+    color: var(--purple-lighter);
+}
+
+.alt-nav__btn:hover::after {
+    border-color: var(--purple-lighter);
+}
+
+.alt-nav__btn:active {
+    color: var(--purple-darker);
+}
+
+.alt-nav__btn:active::after {
+    border-color: var(--purple-darker);
+}
+
+.alt-nav__btn_active {
+    color: var(--purple);
+}
+
+.alt-nav__btn_active::after {
+    border-color: var(--purple);
+    transform: translateY(3.5px) rotate(225deg);
+}
+/* Select painter */
+
+.alt-nav__item {
+    position: relative;
+}
+
+.alt-nav__painters {
+    position: absolute;
+    top: 48px;
+    left: 0;
+}
+
+.select-painter {    
+    width: 300px;
+    height: 300px;
+    padding: 40px 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.select-painter__list {
+    height: 220px;
+    margin: 0;
+    padding: 0 40px;
+}
+
+.select-painter__item {
+    width: 220px;
+    height: 40px;
+    margin-bottom: 20px;
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.select-painter__link {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-left: 8px;
+    border: 2px solid transparent;
+}
+
+.select-painter__link:hover {
+    border: 2px solid var(--purple);
+}
+
+.select-painter__link:active {
+    border: 2px solid #D1A9F0;
+    background-color: rgba(194, 131, 243, 0.4);
+}
+
+.select-painter__link:hover {
+    border: 2px solid var(--purple);
+}
+
+.select-painter__link:focus {
+    border: 2px solid var(--purple-darker);
+    outline: none;
+}
+
+.select-painter__item:nth-child(4n - 3) {
+    background-image: url('../img/header/select-painter-1.jpg');
+}
+
+.select-painter__item:nth-child(4n - 2) {
+    background-image: url('../img/header/select-painter-2.jpg');
+}
+
+.select-painter__item:nth-child(4n - 1) {
+    background-image: url('../img/header/select-painter-3.jpg');
+}
+
+.select-painter__item:nth-child(4n) {
+    background-image: url('../img/header/select-painter-4.jpg');
+}
+/* Search */
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search__input {
+    padding: 0;
+    width: 218px;
+    padding-bottom: 2px;
+    color: rgba(255, 255, 255, 0.85);
+    background-color: inherit;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.85);
+}
+
+.search__btn {
+    margin: 0;
+    padding: 0;
+    width: 22px;
+    height: 22px;
+    margin-right: 9px;
+    background: url('../img/header/search-btn.svg') no-repeat center center;
+}
+
+.search:hover .search__input {
+    border-bottom-color: var(--purple-lighter);
+}
+
+.search:hover .search__btn, .search:focus-within .search__btn{
+    background-image: url('../img/header/search-btn_active.svg');
+}
+
+.search__input:focus {
+    color: var(--purple-lighter);
+    outline: none;
+}
+
+.search__input:focus::placeholder {
+    color: transparent;
+}
+
+@media(max-width: 1600px) {
+    .header__logo {
+        margin-right: 80px;
+    }
+}
