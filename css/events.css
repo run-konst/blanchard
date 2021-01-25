@@ -57,7 +57,7 @@
     border-bottom: 1px solid var(--purple);
 }
 
-.event__btn {
+.events__btn {
     margin-left: 50%;
     transform: translateX(-50%);
     color: var(--purple);

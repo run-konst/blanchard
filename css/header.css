@@ -96,7 +96,7 @@
 .alt-nav__list {
     margin: 0;
     padding: 0;
-    margin-left: -2px;
+    /*margin-left: -2px;*/
     margin-right: auto;
     display: flex;
     flex-wrap: wrap;

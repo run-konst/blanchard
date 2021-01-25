@@ -7,6 +7,9 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style-preset.css">
+    <link rel="stylesheet" href="css/libraries/simplebar.css">
+    <link rel="stylesheet" href="css/libraries/swiper.css">
+    <link rel="stylesheet" href="css/libraries/choices.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/hero.css">
@@ -18,7 +21,6 @@
     <link rel="stylesheet" href="css/projects.css">
     <link rel="stylesheet" href="css/contacts.css">
     <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/libraries/simplebar.css">
 </head>
 <body>
 
@@ -313,13 +315,76 @@
                     </div>
                     <p class="gallery__note">Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний <a href="" class="gallery__link">авторизуйтесь,</a> либо воспользуйтесь лицензией. </p>
                 </div>
-                <div class="gallery__column-2 gal-slider">
-                    <img src="img/gallery/gal-1.jpg" alt="" class="gal-slider__img">
-                    <img src="img/gallery/gal-2.jpg" alt="" class="gal-slider__img">
-                    <img src="img/gallery/gal-3.jpg" alt="" class="gal-slider__img">
-                    <img src="img/gallery/gal-4.jpg" alt="" class="gal-slider__img">
-                    <img src="img/gallery/gal-5.jpg" alt="" class="gal-slider__img">
-                    <img src="img/gallery/gal-6.jpg" alt="" class="gal-slider__img">
+                <div class="gallery__column-2">
+                    <div class="swiper-container gal-slider">
+                        <div class="gal-slider__nav">
+                            <div class="swiper-button-prev gal-slider__prev"></div>
+                            <div class="swiper-pagination gal-slider__pagination"></div>
+                            <div class="swiper-button-next gal-slider__next"></div>
+                        </div>
+                        <div class="swiper-wrapper gal-slider__wrapper">
+                            <div class="swiper-slide gal-slider__slide">
+                              <a href="" class="gal-slider__link"><img src="img/gallery/gal-1.jpg" alt="" class="gal-slider__img"></a>
+                            </div>
+                            <div class="swiper-slide gal-slider__slide">
+                              <a href="" class="gal-slider__link"><img src="img/gallery/gal-2.jpg" alt="" class="gal-slider__img"></a>
+                            </div>
+                            <div class="swiper-slide gal-slider__slide">
+                              <a href="" class="gal-slider__link"><img src="img/gallery/gal-3.jpg" alt="" class="gal-slider__img"></a>
+                            </div>
+                            <div class="swiper-slide gal-slider__slide">
+                              <a href="" class="gal-slider__link"><img src="img/gallery/gal-4.jpg" alt="" class="gal-slider__img"></a>
+                            </div>
+                            <div class="swiper-slide gal-slider__slide">
+                              <a href="" class="gal-slider__link"><img src="img/gallery/gal-5.jpg" alt="" class="gal-slider__img"></a>
+                            </div>
+                            <div class="swiper-slide gal-slider__slide">
+                              <a href="" class="gal-slider__link"><img src="img/gallery/gal-6.jpg" alt="" class="gal-slider__img"></a>
+                            </div>
+                            <div class="swiper-slide gal-slider__slide">
+                              <a href="" class="gal-slider__link"><img src="img/gallery/gal-7.jpg" alt="" class="gal-slider__img"></a>
+                            </div>
+                            <div class="swiper-slide gal-slider__slide">
+                              <a href="" class="gal-slider__link"><img src="img/gallery/gal-8.jpg" alt="" class="gal-slider__img"></a>
+                            </div>
+                            <div class="swiper-slide gal-slider__slide">
+                              <a href="" class="gal-slider__link"><img src="img/gallery/gal-9.jpg" alt="" class="gal-slider__img"></a>
+                            </div>
+                            <div class="swiper-slide gal-slider__slide">
+                              <a href="" class="gal-slider__link"><img src="img/gallery/gal-10.jpg" alt="" class="gal-slider__img"></a>
+                            </div>
+                            <div class="swiper-slide gal-slider__slide">
+                              <a href="" class="gal-slider__link"><img src="img/gallery/gal-11.jpg" alt="" class="gal-slider__img"></a>
+                            </div>
+                            <div class="swiper-slide gal-slider__slide">
+                              <a href="" class="gal-slider__link"><img src="img/gallery/gal-12.jpg" alt="" class="gal-slider__img"></a>
+                            </div>
+                            <div class="swiper-slide gal-slider__slide">
+                              <a href="" class="gal-slider__link"><img src="img/gallery/gal-13.jpg" alt="" class="gal-slider__img"></a>
+                            </div>
+                            <div class="swiper-slide gal-slider__slide">
+                              <a href="" class="gal-slider__link"><img src="img/gallery/gal-14.jpg" alt="" class="gal-slider__img"></a>
+                            </div>
+                            <div class="swiper-slide gal-slider__slide">
+                              <a href="" class="gal-slider__link"><img src="img/gallery/gal-15.jpg" alt="" class="gal-slider__img"></a>
+                            </div>
+                            <div class="swiper-slide gal-slider__slide">
+                              <a href="" class="gal-slider__link"><img src="img/gallery/gal-16.jpg" alt="" class="gal-slider__img"></a>
+                            </div>
+                            <div class="swiper-slide gal-slider__slide">
+                              <a href="" class="gal-slider__link"><img src="img/gallery/gal-17.jpg" alt="" class="gal-slider__img"></a>
+                            </div>
+                            <div class="swiper-slide gal-slider__slide">
+                              <a href="" class="gal-slider__link"><img src="img/gallery/gal-18.jpg" alt="" class="gal-slider__img"></a>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="gallery-modal hidden">
+                    <div class="gallery-modal__container">
+                        <img src="" alt="Картина" class="gallery-modal__img">
+                        <button type="button" class="gallery-modal__btn">Закрыть</button>
+                    </div>
                 </div>
             </div>
         </section>
@@ -442,7 +507,7 @@
                         <a href="" class="event__details">Подробнее</a>
                     </article>
                 </div>
-                <button class="btn event__btn">Все события</button>
+                <button class="btn events__btn">Все события</button>
             </div>
         </section>
     
@@ -560,7 +625,7 @@
             <div class="container">
                 <h2 class="section__heading">Проекты</h2>
                 <p class="projects__text">Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно фиксирует необходимость своевременного выполнения сверхзадачи. А ещё независимые государства смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности. Прежде всего, постоянное информационно-пропагандистское      обеспечение нашей деятельности однозначно фиксирует необходимость экономической целесообразности принимаемых решений. И нет сомнений, что действия представителей оппозиции могут быть рассмотрены исключительно в разрезе маркетинговых и финансовых      предпосылок. Банальные, но неопровержимые выводы, а также представители современных социальных резервов призывают нас к новым свершениям, которые, в свою очередь, должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости. Подробнее: <a class="projects__link" href="">blanchard-art.ru/projects/about</a></p>
-                <div class="project__partners partners">
+                <div class="projects__partners partners">
                     <h3 class="partners__heading">Партнёры проектов:</h3>
                     <div class="partners__container">
                         <div class="partners__item">
@@ -630,10 +695,53 @@
     </footer>
     
     <!-- Scripts -->
-    
-    <script src="js/libraries/simplebar.min.js"></script>
 
     <script src="js/header.js"></script>
     <script src="js/scroll.js"></script>
+    <script src="js/gallery.js"></script>
+    
+    <script src="js/libraries/simplebar.min.js"></script>
+
+    <!-- Choices -->
+
+    <script src="js/libraries/choices.min.js"></script>
+    <script>
+        const element = document.querySelector('.gal-filter__select');
+        const choices = new Choices(element, {
+            itemSelectText: '',
+            searchEnabled: false,      
+        });
+    </script>
+
+    
+    <!-- Swiper -->
+
+    <script src="js/libraries/swiper.min.js"></script>
+
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 3,
+            slidesPerColumn: 2,
+            slidesPerGroup: 3,
+            spaceBetween: 50,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'fraction',
+            },/*
+            breakpoints: {
+                1400: {
+                    slidesPerView: 3,
+                    slidesPerGroup: 3
+                },
+            },*/
+            observer: true,
+            
+    });
+    </script>
+
 </body>
 </html>
