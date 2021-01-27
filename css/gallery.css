@@ -40,6 +40,19 @@
     color: var(--purple);
 }
 
+.gallery__link:focus {
+    outline-color: var(--purple-darker);
+}
+
+.gallery__link:hover {
+    text-decoration: underline;
+}
+
+.gallery__link:active {
+    text-decoration: underline;
+    color: var(--purple-darker);
+}
+
 /* Select */
 
 .choices[data-type*='select-one'] .choices__inner {    

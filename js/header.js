@@ -1,5 +1,5 @@
 const buttons = document.querySelectorAll('.alt-nav__btn');
-const dropdowns = document.querySelectorAll('.select-painter');
+const dropdowns = document.querySelectorAll('.alt-nav__painters');
 
 
 let clickButton = function(button, dropdown) {

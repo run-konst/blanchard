@@ -3,10 +3,11 @@
 .catalog__header {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 .catalog__country {
-    margin-left: 31px;
+    margin-left: 41px;
 }
 
 .country {
@@ -14,20 +15,17 @@
 }
 
 .country__item:not(:last-child) {
-    margin-right: 30px;
+    margin-right: 50px;
 }
 
 .country__item {
-    width: 66px;
-    height: 66px;
+    width: 46px;
+    height: 46px;
+    border: 2px solid transparent;
     border-radius: 50%;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 46px 46px;
-}
-
-.country__item_active {
-    border: 2px solid var(--purple);
 }
 
 .country__france {
@@ -50,15 +48,41 @@
     background-image: url('../img/catalog/belgium.svg');
 }
 
+.country__item:focus {
+    border-color: var(--purple-darker);
+    outline: none;
+}
+
+.country__item:hover {
+    filter: drop-shadow(0px 0px 20px rgba(157, 92, 208, 0.7));
+}
+
+.country__item_active {
+    position: relative;
+}
+
+.country__item_active::after {
+    content: '';
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    bottom: -10px;
+    left: -10px;
+    border: 2px solid var(--purple);
+    border-radius: 50%;
+}
+
 /* Text and columns */
 
 .catalog__text {
+    margin: 0;
     max-width: 1080px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 .catalog__content {
     display: flex;
+    overflow: hidden;
 }
 
 .catalog__column-1 {
@@ -70,6 +94,7 @@
     flex: 0 0 50%;
 }
  /* Painter block */
+
 .painter {
     display: flex;
     flex-direction: column;
@@ -82,19 +107,41 @@
 }
 
 .painter__name {
-    margin-bottom: 15px;
+    margin: 0;
+    margin-bottom: 10px;
     font-size: 24px;
     line-height: 33px;
+    font-weight: 600;
 }
 
 .painter__years {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     font-size: 12px;
     line-height: 16px;
     color: var(--gray);
 }
 
+.painter__description {
+    margin: 0;
+    padding: 0;
+}
+
 /* Year list */
+
+@keyframes showYearList {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.year-list {
+    margin: 0;
+    padding: 0;
+    animation: showYearList .7s ease-out;
+}
 
 .year-list__item {
     border-top: var(--gray-border);
@@ -105,7 +152,11 @@
 }
 
 .year-list__years {
+    position: relative;
     display: block;
+    width: 100%;
+    text-align: left;
+    padding: 0;
     padding-top: 37px;
     padding-bottom: 44px;
     font-size: 24px;
@@ -113,18 +164,101 @@
     font-weight: 600;
 }
 
+.year-list__years::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) translateY(-2px) rotate(45deg);
+    right: 18px;
+    width: 12px;
+    height: 12px;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    z-index: 10;
+    transition: border-color .3s;
+}
+
+.year-list__years::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    width: 50px;
+    height: 50px;
+    background-color: #ECECEC;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    transition: background-color .3s;
+}
+
+.year-list__text {
+    transition: color .3s;
+}
+
+.year-list__years:focus {
+    outline: none;
+}
+
+.year-list__years:focus .year-list__text {
+    outline: 2px solid var(--purple-darker);
+    outline-offset: 2px;
+}
+
+.year-list__years:focus::after {
+    border-color: var(--purple-darker);
+}
+
+.year-list__years:hover .year-list__text {
+    color: var(--purple);
+}
+
+.year-list__years:hover::after {
+    background-color: var(--purple);
+}
+
+.year-list__years:hover::before {
+    border-color: white;
+}
+
+.year-list__years:active .year-list__text {
+    color: var(--purple-darker);
+}
+
+.year-list__years:active::after {
+    background-color: var(--purple-darker);
+    border-color: #D1A9F0;
+}
+
+.year-list__years_active::after {
+    background-color: var(--purple);
+}
+
+.year-list__years_active::before {    
+    border-color: white;
+    transform: translateY(-2px) rotate(225deg);
+}
+
 .year-list__painters {
     columns: 3;
+    margin: 0;
     padding: 25px 0;
     border-top: 1px solid var(--purple);
     border-bottom: 1px solid var(--purple);
 }
 
-.year-list__painter {
-    cursor: pointer;
+.year-list__link:hover {
+    color: var(--purple);
+    text-decoration: underline;
+    font-weight: 600;
 }
 
-.year-list__painter_active {
+.year-list__link:active {
+    color: var(--purple-darker);
+    text-decoration: none;
+}
+
+.year-list__link_active {
     font-weight: 600;
     color: var(--purple);
 }
