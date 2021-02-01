@@ -78,6 +78,12 @@ for(let i = 0; i < painterButtons.length; i++) {
 
 let clickCountry = function(country, list) {
     country.addEventListener('click', function() {
+        painterLists.forEach(function(elem) {
+            elem.classList.add('hidden');
+        });
+        years.forEach(function(elem) {
+            elem.classList.remove('year-list__years_active');
+        });
         countryButtons.forEach(function(elem) {
             elem.classList.remove('country__item_active');
         });
@@ -86,6 +92,11 @@ let clickCountry = function(country, list) {
         });
         country.classList.add('country__item_active');
         list.classList.remove('hidden');
+        let firstPainterList = list.querySelector('.year-list__painters');
+        let firstPainterYears = list.querySelector('.year-list__years');
+        list.classList.remove('hidden');
+        firstPainterList.classList.remove('hidden');
+        firstPainterYears.classList.add('year-list__years_active');
     })
 }
 

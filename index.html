@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="css/hero.css">
     <link rel="stylesheet" href="css/about-us.css">
     <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/gallery-modal.css">
     <link rel="stylesheet" href="css/catalog.css">
     <link rel="stylesheet" href="css/events.css">
     <link rel="stylesheet" href="css/publications.css">
@@ -359,10 +360,10 @@
                 </div>
                 <div class="gallery__column-2">
                     <div class="swiper-container gal-slider">
-                        <div class="gal-slider__nav">
-                            <div class="swiper-button-prev gal-slider__prev"></div>
-                            <div class="swiper-pagination gal-slider__pagination"></div>
-                            <div class="swiper-button-next gal-slider__next"></div>
+                        <div class="slider__nav">
+                            <div class="swiper-button-prev slider__prev"></div>
+                            <div class="swiper-pagination slider__pagination"></div>
+                            <div class="swiper-button-next slider__next"></div>
                         </div>
                         <div class="swiper-wrapper gal-slider__wrapper">
                             <div class="swiper-slide gal-slider__slide">
@@ -425,7 +426,13 @@
                 <div class="gallery-modal hidden">
                     <div class="gallery-modal__container">
                         <img src="" alt="Картина" class="gallery-modal__img">
-                        <button type="button" class="gallery-modal__btn">Закрыть</button>
+                        <div class="gallery-modal__description">
+                            <p class="gallery-modal__painter">Казимир Малевич</p>
+                            <h4 class="gallery-modal__img-name">“Женщина с граблями”</h4>
+                            <span class="gallery-modal__years">1931-1932</span>
+                            <p class="gallery-modal__img-description">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+                            <button type="button" class="gallery-modal__btn"></button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -483,7 +490,7 @@
                                 <li class="year-list__painter"><a href="" class="year-list__link">Перуцци, Бальдассаре</a></li>
                                 <li class="year-list__painter"><a href="" class="year-list__link">Пизанелло</a></li>
                                 <li class="year-list__painter"><a href="" class="year-list__link">Пинтуриккьо</a></li>
-                            </ul>                            
+                            </ul>
                         </li>
                         <li class="year-list__item">
                             <button type="button" class="year-list__years" tabindex="0">
@@ -509,7 +516,7 @@
                                 <li class="year-list__painter"><a href="" class="year-list__link">Пезеллино</a></li>
                                 <li class="year-list__painter"><a href="" class="year-list__link">Пьетро Перуджино</a></li>
                                 <li class="year-list__painter"><a href="" class="year-list__link">Перуцци, Бальдассаре</a></li>
-                            </ul>                            
+                            </ul>
                         </li>
                         <li class="year-list__item">
                             <button type="button" class="year-list__years" tabindex="0">
@@ -1242,8 +1249,8 @@
         <section id="events" class="section events">
             <div class="container">
                 <h2 class="section__heading">События</h2>
-                <div class="events__container">
-                    <article class="events__item event">
+                <ul class="events__container">
+                    <li class="events__item event">
                         <img src="img/events/event-1.jpg" alt="Событие" class="event__img">
                         <div class="event__content">
                             <span class="event__place">Музей им. Щусева</span>
@@ -1252,8 +1259,8 @@
                             <p class="event__description">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело.</p>
                         </div>
                         <a href="" class="event__details">Подробнее</a>
-                    </article>
-                    <article class="events__item event">
+                    </li>
+                    <li class="events__item event">
                         <img src="img/events/event-2.jpg" alt="Событие" class="event__img">
                         <div class="event__content">
                             <span class="event__place">ММОМА</span>
@@ -1262,8 +1269,8 @@
                             <p class="event__description">Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: постоянный количественный рост и сфера нашей активности представляет собой интересный эксперимент проверки новых принципов формирования...</p>
                         </div>
                         <a href="" class="event__details">Подробнее</a>
-                    </article>
-                    <article class="events__item event">
+                    </li>
+                    <li class="events__item event">
                         <img src="img/events/event-3.jpg" alt="Событие" class="event__img">
                         <div class="event__content">
                             <span class="event__place">Еврейский музей</span>
@@ -1272,8 +1279,8 @@
                             <p class="event__description">Идейные соображения высшего порядка, а также современная методология разработки играет важную роль в формировании глубокомысленных рассуждений. Также как перспективное планирование играет определяющее значение для новых принципов формирования материально-технической и кадровой базы.</p>
                         </div>
                         <a href="" class="event__details">Подробнее</a>
-                    </article>
-                    <article class="events__item event">
+                    </li>
+                    <li class="events__item event">
                         <img src="img/events/event-4.jpg" alt="Событие" class="event__img">
                         <div class="event__content">
                             <span class="event__place">Третьяковка на Крымском валу</span>
@@ -1282,8 +1289,8 @@
                             <p class="event__description">Внезапно, реплицированные с зарубежных источников, современные исследования представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом и должны быть рассмотрены исключительно в разрезе маркетинговых и финансовых...</p>
                         </div>                        
                         <a href="" class="event__details">Подробнее</a>
-                    </article>
-                    <article class="events__item event">
+                    </li>
+                    <li class="events__item event">
                         <img src="img/events/event-5.jpg" alt="Событие" class="event__img">
                         <div class="event__content">
                             <span class="event__place">ММАМ</span>
@@ -1292,8 +1299,8 @@
                             <p class="event__description">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело.</p>
                         </div>
                         <a href="" class="event__details">Подробнее</a>
-                    </article>
-                </div>
+                    </li>
+                </ul>
                 <button class="btn events__btn">Все события</button>
             </div>
         </section>
@@ -1308,52 +1315,52 @@
                         <div class="publications__categories categories">
                             <h4 class="categories__heading">Категории</h4>
                             <label class="categories__item">
-                                <input type="checkbox" class="categories__checkbox">
-                                Бестселлеры
+                                <input type="checkbox" class="categories__checkbox visually-hidden">
+                                <span class="categories__label">Бестселлеры</span>                                
                             </label>
                             <label class="categories__item">
-                                <input type="checkbox" class="categories__checkbox">
-                                Искусство
+                                <input type="checkbox" class="categories__checkbox visually-hidden">
+                                <span class="categories__label">Искусство</span>
                             </label>
                             <label class="categories__item">
-                                <input type="checkbox" class="categories__checkbox">
-                                Архитектура
+                                <input type="checkbox" class="categories__checkbox visually-hidden">
+                                <span class="categories__label">Архитектура</span>
                             </label>
                             <label class="categories__item">
-                                <input type="checkbox" class="categories__checkbox">
-                                Дизайн
+                                <input type="checkbox" class="categories__checkbox visually-hidden">
+                                <span class="categories__label">Дизайн</span>
                             </label>
                             <label class="categories__item">
-                                <input type="checkbox" class="categories__checkbox">
-                                Мода
+                                <input type="checkbox" class="categories__checkbox visually-hidden">
+                                <span class="categories__label">Мода</span>
                             </label>
                             <label class="categories__item">
-                                <input type="checkbox" class="categories__checkbox">
-                                Детям
+                                <input type="checkbox" class="categories__checkbox visually-hidden">
+                                <span class="categories__label">Детям</span>
                             </label>
                             <label class="categories__item">
-                                <input type="checkbox" class="categories__checkbox">
-                                Художественная литература
+                                <input type="checkbox" class="categories__checkbox visually-hidden">
+                                <span class="categories__label">Художественная литература</span>
                             </label>
                             <label class="categories__item">
-                                <input type="checkbox" class="categories__checkbox">
-                                Публицистика
+                                <input type="checkbox" class="categories__checkbox visually-hidden">
+                                <span class="categories__label">Публицистика</span>
                             </label>
                             <label class="categories__item">
-                                <input type="checkbox" class="categories__checkbox">
-                                Путеводители
+                                <input type="checkbox" class="categories__checkbox visually-hidden">
+                                <span class="categories__label">Путеводители</span>
                             </label>
                             <label class="categories__item">
-                                <input type="checkbox" class="categories__checkbox">
-                                Философия
+                                <input type="checkbox" class="categories__checkbox visually-hidden">
+                                <span class="categories__label">Философия</span>
                             </label>
                             <label class="categories__item">
-                                <input type="checkbox" class="categories__checkbox">
-                                Учебная литература
+                                <input type="checkbox" class="categories__checkbox visually-hidden">
+                                <span class="categories__label">Учебная литература</span>
                             </label>
                             <label class="categories__item">
-                                <input type="checkbox" class="categories__checkbox">
-                                Журналы и газеты
+                                <input type="checkbox" class="categories__checkbox visually-hidden">
+                                <span class="categories__label">Журналы и газеты</span>
                             </label>                            
                         </div>
                         <div class="publications__price price-filter">
@@ -1363,45 +1370,113 @@
                                 <input type="text" id="start-price" class="price-input__input" placeholder="50">
                                 <label class="price-input__label" for="end-price">до</label>
                                 <input type="text" id="end-price" class="price-input__input" placeholder="25 000">
-                                <span class="price-input__label">рублей</span>
+                                <span class="price-input__label">руб.</span>
                             </div>
                         </div>                        
                     </form>
                 </div>
                 <div class="publications__column-2">
-                    <article class="publications__item publication">
-                        <img src="img/publications/pub-1.jpg" alt="Обложка книги" class="publication__img">
-                        <div class="publication__details">
-                            <div class="publication__description">
-                                <h3 class="publication__name">Искусство цвета</h3>
-                                <span class="publication__author">Иттен, Иоханнес</span>
-                            </div>
-                            <span class="publication__price">620 руб</span>
+                    
+                    <div class="swiper-container pub-slider">
+                        <div class="slider__nav">
+                            <div class="swiper-button-prev slider__prev"></div>
+                            <div class="swiper-pagination slider__pagination"></div>
+                            <div class="swiper-button-next slider__next"></div>
                         </div>
-                        <button class="btn publication__btn">Заказать</button>
-                    </article>
-                    <article class="publications__item publication">
-                        <img src="img/publications/pub-2.jpg" alt="Обложка книги" class="publication__img">
-                        <div class="publication__details">
-                            <div class="publication__description">
-                                <h3 class="publication__name">Типографика</h3>
-                                <span class="publication__author">Рудер, Эмиль</span>
+                        <div class="swiper-wrapper pub-slider__wrapper">
+                            <div class="swiper-slide pub-slider__slide">
+                                <article class="publications__item publication">
+                                    <img src="img/publications/pub-1.jpg" alt="Обложка книги" class="publication__img">
+                                    <div class="publication__details">
+                                        <div class="publication__description">
+                                            <h3 class="publication__name">Искусство цвета</h3>
+                                            <span class="publication__author">Иттен, Иоханнес</span>
+                                        </div>
+                                        <span class="publication__price">620 руб</span>
+                                    </div>
+                                    <button class="btn publication__btn"><span class="publication__btn-label">Заказать</span></button>
+                                </article>
                             </div>
-                            <span class="publication__price">2 450 руб</span>
-                        </div>
-                        <button class="btn publication__btn">Заказать</button>
-                    </article>
-                    <article class="publications__item publication">
-                        <img src="img/publications/pub-3.jpg" alt="Обложка книги" class="publication__img">
-                        <div class="publication__details">
-                            <div class="publication__description">
-                                <h3 class="publication__name">Книга про буквы</h3>
-                                <span class="publication__author">Гордон, Юрий</span>
+                            <div class="swiper-slide pub-slider__slide">
+                                <article class="publications__item publication">
+                                    <img src="img/publications/pub-2.jpg" alt="Обложка книги" class="publication__img">
+                                    <div class="publication__details">
+                                        <div class="publication__description">
+                                            <h3 class="publication__name">Типографика</h3>
+                                            <span class="publication__author">Рудер, Эмиль</span>
+                                        </div>
+                                        <span class="publication__price">2 450 руб</span>
+                                    </div>
+                                    <button class="btn publication__btn"><span class="publication__btn-label">Заказать</span></button>
+                                </article>
                             </div>
-                            <span class="publication__price">2 200 руб</span>
+                            <div class="swiper-slide pub-slider__slide">
+                                <article class="publications__item publication">
+                                    <img src="img/publications/pub-3.jpg" alt="Обложка книги" class="publication__img">
+                                    <div class="publication__details">
+                                        <div class="publication__description">
+                                            <h3 class="publication__name">Книга про буквы</h3>
+                                            <span class="publication__author">Гордон, Юрий</span>
+                                        </div>
+                                        <span class="publication__price">2 200 руб</span>
+                                    </div>
+                                    <button class="btn publication__btn"><span class="publication__btn-label">Заказать</span></button>
+                                </article>
+                            </div>
+                            <div class="swiper-slide pub-slider__slide">
+                                <article class="publications__item publication">
+                                    <img src="img/publications/pub-4.jpg" alt="Обложка книги" class="publication__img">
+                                    <div class="publication__details">
+                                        <div class="publication__description">
+                                            <h3 class="publication__name">Николай Ильин</h3>
+                                            <span class="publication__author">Кричевский, Владимир</span>
+                                        </div>
+                                        <span class="publication__price">1 100 руб</span>
+                                    </div>
+                                    <button class="btn publication__btn"><span class="publication__btn-label">Заказать</span></button>
+                                </article>
+                            </div>
+                            <div class="swiper-slide pub-slider__slide">
+                                <article class="publications__item publication">
+                                    <img src="img/publications/pub-5.jpg" alt="Обложка книги" class="publication__img">
+                                    <div class="publication__details">
+                                        <div class="publication__description">
+                                            <h3 class="publication__name">Модульные сетки в граф...</h3>
+                                            <span class="publication__author">Мюллер-Брокманн, Йозеф</span>
+                                        </div>
+                                        <span class="publication__price">1 450 руб</span>
+                                    </div>
+                                    <button class="btn publication__btn"><span class="publication__btn-label">Заказать</span></button>
+                                </article>
+                            </div>
+                            <div class="swiper-slide pub-slider__slide">
+                                <article class="publications__item publication">
+                                    <img src="img/publications/pub-6.jpg" alt="Обложка книги" class="publication__img">
+                                    <div class="publication__details">
+                                        <div class="publication__description">
+                                            <h3 class="publication__name">Эволюция графических ст...</h3>
+                                            <span class="publication__author">Хеллер, Чваст</span>
+                                        </div>
+                                        <span class="publication__price">3 200 руб</span>
+                                    </div>
+                                    <button class="btn publication__btn"><span class="publication__btn-label">Заказать</span></button>
+                                </article>
+                            </div>
+                            <div class="swiper-slide pub-slider__slide">
+                                <article class="publications__item publication">
+                                    <img src="img/publications/pub-7.jpg" alt="Обложка книги" class="publication__img">
+                                    <div class="publication__details">
+                                        <div class="publication__description">
+                                            <h3 class="publication__name">Искусство и визуальное в...</h3>
+                                            <span class="publication__author">Арнхейм, Рудольф</span>
+                                        </div>
+                                        <span class="publication__price">2 200 руб</span>
+                                    </div>
+                                    <button class="btn publication__btn"><span class="publication__btn-label">Заказать</span></button>
+                                </article>
+                            </div>
                         </div>
-                        <button class="btn publication__btn">Заказать</button>
-                    </article>
+                    </div>
                 </div>
             </div>
         </section>
@@ -1485,7 +1560,7 @@
 
     <script src="js/header.js"></script>
     <script src="js/scroll.js"></script>
-    <script src="js/gallery.js"></script>
+    <script src="js/gallery-modal.js"></script>
     <script src="js/catalog.js"></script>
     <script src="js/events.js"></script>
     
@@ -1508,7 +1583,7 @@
     <script src="js/libraries/swiper.min.js"></script>
 
     <script>
-        var swiper = new Swiper('.swiper-container', {
+        var swiper = new Swiper('.gal-slider', {
             slidesPerView: 3,
             slidesPerColumn: 2,
             slidesPerGroup: 3,
@@ -1530,6 +1605,23 @@
             observer: true,
             
     });
+    </script>
+    
+    <script>
+        var swiper = new Swiper('.pub-slider', {
+            slidesPerView: 3,
+            slidesPerGroup: 3,
+            spaceBetween: 50,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'fraction',
+            },
+            observer: true,
+        });
     </script>
 
 </body>

@@ -1,6 +1,8 @@
 .events__container {
     display: flex;
     flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
     margin-right: -50px;
     overflow: hidden;
 }

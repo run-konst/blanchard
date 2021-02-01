@@ -1,0 +1,69 @@
+.gallery-modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.gallery-modal__container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    height: 500px;
+}
+
+.gallery-modal__img {
+    display: block;
+    height: 100%;
+    width: auto;
+}
+
+.gallery-modal__description {
+    position: relative;
+    padding: 121px 50px;
+    background-color: #fff;
+    color: var(--main-text);
+    width: 500px;
+}
+
+.gallery-modal__painter {
+    margin: 0;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 600;
+}
+
+.gallery-modal__img-name {
+    margin: 0;
+    margin-bottom: 2px;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 600;
+}
+
+.gallery-modal__years {
+    display: block;
+    font-size: 12px;
+    line-height: 16px;
+    color: #969696;
+    margin-bottom: 40px;
+}
+
+.gallery-modal__img-description {
+    margin: 0;
+}
+
+.gallery-modal__btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 16px;
+    height: 16px;
+    padding: 28px;
+    background: url('../img/cross.svg') no-repeat center center;
+}
