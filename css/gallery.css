@@ -38,6 +38,7 @@
 
 .gallery__link {
     color: var(--purple);
+    border-bottom: 1px solid transparent;
 }
 
 .gallery__link:focus {
@@ -45,11 +46,11 @@
 }
 
 .gallery__link:hover {
-    text-decoration: underline;
+    border-color: var(--purple);
 }
 
 .gallery__link:active {
-    text-decoration: underline;
+    border-color: var(--purple-darker);
     color: var(--purple-darker);
 }
 

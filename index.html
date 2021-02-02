@@ -1280,7 +1280,7 @@
                         </div>
                         <a href="" class="event__details">Подробнее</a>
                     </li>
-                    <li class="events__item event">
+                    <li class="events__item event hidden">
                         <img src="img/events/event-4.jpg" alt="Событие" class="event__img">
                         <div class="event__content">
                             <span class="event__place">Третьяковка на Крымском валу</span>
@@ -1290,7 +1290,7 @@
                         </div>                        
                         <a href="" class="event__details">Подробнее</a>
                     </li>
-                    <li class="events__item event">
+                    <li class="events__item event hidden">
                         <img src="img/events/event-5.jpg" alt="Событие" class="event__img">
                         <div class="event__content">
                             <span class="event__place">ММАМ</span>
@@ -1486,20 +1486,42 @@
         <section id="projects" class="section projects">
             <div class="container">
                 <h2 class="section__heading">Проекты</h2>
-                <p class="projects__text">Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно фиксирует необходимость своевременного выполнения сверхзадачи. А ещё независимые государства смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности. Прежде всего, постоянное информационно-пропагандистское      обеспечение нашей деятельности однозначно фиксирует необходимость экономической целесообразности принимаемых решений. И нет сомнений, что действия представителей оппозиции могут быть рассмотрены исключительно в разрезе маркетинговых и финансовых      предпосылок. Банальные, но неопровержимые выводы, а также представители современных социальных резервов призывают нас к новым свершениям, которые, в свою очередь, должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости. Подробнее: <a class="projects__link" href="">blanchard-art.ru/projects/about</a></p>
+                <p class="projects__text">Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно фиксирует необходимость своевременного выполнения сверхзадачи. А ещё независимые государства смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности. Прежде всего, постоянное информационно-пропагандистское<span class="tooltip" data-tooltip="Пример современных тенденций - современная методология разработки"></span> обеспечение нашей деятельности однозначно фиксирует необходимость экономической целесообразности принимаемых решений. И нет сомнений, что действия представителей оппозиции могут быть рассмотрены<span class="tooltip" data-tooltip="Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции"></span> исключительно в разрезе маркетинговых и финансовых<span class="tooltip" data-tooltip="В стремлении повысить качество"></span> предпосылок. Банальные, но неопровержимые выводы, а также представители современных социальных резервов призывают нас к новым свершениям, которые, в свою очередь, должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости. Подробнее: <a class="projects__link" href="">blanchard-art.ru/projects/about</a></p>
+                <p class="projects__partners-header">Партнёры проектов:</p>
                 <div class="projects__partners partners">
-                    <h3 class="partners__heading">Партнёры проектов:</h3>
-                    <div class="partners__container">
-                        <div class="partners__item">
-                            <img src="img/projects/partner-1.png" alt="Наш партнер" class="partners__img">
-                        </div>
-                        <div class="partners__item">
-                            <img src="img/projects/partner-2.png" alt="Наш партнер" class="partners__img">
-                        </div>
-                        <div class="partners__item">
-                            <img src="img/projects/partner-3.png" alt="Наш партнер" class="partners__img">
+                    <div class="swiper-button-prev slider__prev partners__prev"></div>
+                    <div class="partners__slider swiper-container">
+                        <div class="partners__container swiper-wrapper">
+                            <div class="partners__item swiper-slide">
+                                <img src="img/projects/partner-1.png" alt="Наш партнер" class="partners__img">
+                            </div>
+                            <div class="partners__item swiper-slide">
+                                <img src="img/projects/partner-2.png" alt="Наш партнер" class="partners__img">
+                            </div>
+                            <div class="partners__item swiper-slide">
+                                <img src="img/projects/partner-3.png" alt="Наш партнер" class="partners__img">
+                            </div>
+                            <div class="partners__item swiper-slide">
+                                <img src="img/projects/partner-4.png" alt="Наш партнер" class="partners__img">
+                            </div>
+                            <div class="partners__item swiper-slide">
+                                <img src="img/projects/partner-5.png" alt="Наш партнер" class="partners__img">
+                            </div>
+                            <div class="partners__item swiper-slide">
+                                <img src="img/projects/partner-6.png" alt="Наш партнер" class="partners__img">
+                            </div>
+                            <div class="partners__item swiper-slide">
+                                <img src="img/projects/partner-7.png" alt="Наш партнер" class="partners__img">
+                            </div>
+                            <div class="partners__item swiper-slide">
+                                <img src="img/projects/partner-8.png" alt="Наш партнер" class="partners__img">
+                            </div>
+                            <div class="partners__item swiper-slide">
+                                <img src="img/projects/partner-9.png" alt="Наш партнер" class="partners__img">
+                            </div>
                         </div>
                     </div>
+                    <div class="swiper-button-next slider__next partners__next"></div>
                 </div>
             </div>
         </section>
@@ -1621,6 +1643,24 @@
                 type: 'fraction',
             },
             observer: true,
+        });
+    </script>
+    
+    <script>
+        var swiper = new Swiper('.partners__slider', {
+            slidesPerView: 3,
+            slidesPerGroup: 3,
+            spaceBetween: 50,
+            navigation: {
+                nextEl: '.partners__next',
+                prevEl: '.partners__prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'fraction',
+            },
+            observer: true,
+            loop: true,
         });
     </script>
 

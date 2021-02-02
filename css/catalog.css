@@ -247,15 +247,18 @@
     border-bottom: 1px solid var(--purple);
 }
 
+.year-list__link {
+    border-bottom: 1px solid transparent;
+}
+
 .year-list__link:hover {
+    border-color: var(--purple);
     color: var(--purple);
-    text-decoration: underline;
-    font-weight: 600;
 }
 
 .year-list__link:active {
+    border-color: var(--purple-darker);
     color: var(--purple-darker);
-    text-decoration: none;
 }
 
 .year-list__link_active {

@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
     margin-right: -50px;
-    overflow: hidden;
 }
 
 .events__item {
@@ -69,11 +68,11 @@
 }
 
 .event__details:hover {
-    font-weight: 700;
+    color: var(--purple-lighter);
+    border-color: var(--purple-lighter);
 }
 
 .event__details:active {
-    font-weight: 700;
     color: var(--purple-darker);
     border-color: var(--purple-darker);
 }

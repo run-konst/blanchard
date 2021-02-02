@@ -1,9 +1,11 @@
 .projects__text {
+    margin: 0;
+    margin-bottom: 20px;
     max-width: 1080px;
-    margin-bottom: 25px;
 }
 
-.partners__heading {
+.projects__partners-header {
+    margin: 0;
     margin-bottom: 23px;
     font-size: 24px;
     font-weight: 600;
@@ -17,12 +19,89 @@
 .projects__link {
     font-weight: 600;
     color: var(--purple);
+    border-bottom: 1px solid transparent;
 }
 
-/* Partner cards */
+.projects__link:focus {
+    outline-color: var(--purple-darker);
+}
+
+.projects__link:hover {
+    border-color: var(--purple);
+}
+
+.projects__link:active {
+    border-color: var(--purple-darker);
+    color: var(--purple-darker);
+}
+
+/* Tooltip */
+
+.tooltip {
+    position: relative;
+    padding-right: 20px;
+    background: url('../img/projects/tooltip.svg') no-repeat right center;    
+    cursor: help;
+    transition: background-image .4s;
+}
+
+.tooltip::after {
+    position: absolute;
+    bottom: calc(100% + 10px);
+    right: 10px;
+    transform: translateX(50%);
+    content: attr(data-tooltip);
+    display: inline-block;
+    padding: 8px 11px;
+    width: 264px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 600;
+    color: white;
+    background-color: #cacaca;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .4s;
+}
+
+.tooltip::before {
+    position: absolute;
+    bottom: calc(100% + 2px);
+    right: 8px;
+    transform: translateX(50%);
+    content: '';
+    width: 14px;
+    height: 8px;
+    background: url('../img/projects/rectangle.svg') no-repeat center center;    
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .4s;
+}
+
+.tooltip:hover {
+    background-image: url('../img/projects/tooltip_active.svg');
+}
+
+.tooltip:hover::after, .tooltip:hover::before {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Partners slider */
+
+.partners {
+    display: flex;
+    align-items: center;
+}
+
+.partners__slider {
+    max-width: 1450px;
+    margin: 0 45px;
+}
 
 .partners__item {
-    width: 450px;
+    box-sizing: border-box;
     height: 150px;
     display: flex;
     justify-content: center;
@@ -42,3 +121,17 @@
     filter: none;
     opacity: 1;
 }
+
+.partners__prev, .partners__next {
+    flex-shrink: 0;
+    background-color: #ECECEC;
+}
+
+.partners__prev:hover, 
+.partners__next:hover,
+.partners__prev:active, 
+.partners__next:active {
+    color: white;
+}
+
+
