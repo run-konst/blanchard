@@ -43,11 +43,6 @@
     border: 3px solid var(--purple);
 }
 
-.hero__btn:focus {
-    border-color: var(--purple-darker);
-    outline: none;
-}
-
 .hero__btn:hover, .hero__btn:active {
     border-color: #D1A9F0;
 }

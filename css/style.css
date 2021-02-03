@@ -53,8 +53,8 @@
 
 :root {
     --main-text: #333333;
-    --purple: #9D5CD0;    
-    --purple-lighter: #C283F3;    
+    --purple: #9D5CD0;
+    --purple-lighter: #C283F3;
     --purple-darker: #7943A4;
     --gray: #999999;
     --gray-border: 1px solid #CACACA;
@@ -99,6 +99,25 @@ input, button {
     line-height: 24px;
     font-weight: 700;
     border: 2px solid var(--purple);
+    border-radius: 100px;
+}
+
+.btn_focus-effect {
+    position: relative;
+}
+
+.btn_focus-effect:focus {
+    outline: none;
+}
+
+.btn_focus-effect:focus::after {
+    content: '';
+    position: absolute;
+    top: -7px;
+    left: -7px;
+    bottom: -7px;
+    right: -7px;
+    border: 2px solid var(--purple-lighter);
     border-radius: 100px;
 }
 

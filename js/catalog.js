@@ -28,6 +28,42 @@ const painters = [
         years: '5 января 1448 — 5 февраля 1494.',
         description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur non, vel totam quaerat sequi iusto aperiam officiis architecto nemo numquam, excepturi voluptates aut labore beatae nam rerum dolorem amet ipsam.Similique, laboriosam! Nulla cupiditate laudantium voluptates ipsa eligendi neque! Obcaecati, tenetur sequi excepturi fugiat quas dignissimos doloremque sapiente molestiae aut omnis enim eveniet. Est, mollitia commodi aut eveniet eum laudantium.',
         img: 'img/events/event-5.jpg'
+    },
+    {
+        name: 'Французский художник 6',
+        years: '6 января 1448 — 6 февраля 1494.',
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur non, vel totam quaerat sequi iusto aperiam officiis architecto nemo numquam, excepturi voluptates aut labore beatae nam rerum dolorem amet ipsam.Similique, laboriosam! Nulla cupiditate laudantium voluptates ipsa eligendi neque! Obcaecati, tenetur sequi excepturi fugiat quas dignissimos doloremque sapiente molestiae aut omnis enim eveniet. Est, mollitia commodi aut eveniet eum laudantium.',
+        img: 'img/gallery/gal-full-1.jpg'
+    },
+    {
+        name: 'Французский художник 7',
+        years: '7 января 1448 — 7 февраля 1494.',
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur non, vel totam quaerat sequi iusto aperiam officiis architecto nemo numquam, excepturi voluptates aut labore beatae nam rerum dolorem amet ipsam.Similique, laboriosam! Nulla cupiditate laudantium voluptates ipsa eligendi neque! Obcaecati, tenetur sequi excepturi fugiat quas dignissimos doloremque sapiente molestiae aut omnis enim eveniet. Est, mollitia commodi aut eveniet eum laudantium.',
+        img: 'img/gallery/gal-full-2.jpg'
+    },
+    {
+        name: 'Французский художник 8',
+        years: '8 января 1448 — 8 февраля 1494.',
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur non, vel totam quaerat sequi iusto aperiam officiis architecto nemo numquam, excepturi voluptates aut labore beatae nam rerum dolorem amet ipsam.Similique, laboriosam! Nulla cupiditate laudantium voluptates ipsa eligendi neque! Obcaecati, tenetur sequi excepturi fugiat quas dignissimos doloremque sapiente molestiae aut omnis enim eveniet. Est, mollitia commodi aut eveniet eum laudantium.',
+        img: 'img/gallery/gal-full-3.jpg'
+    },
+    {
+        name: 'Французский художник 9',
+        years: '9 января 1448 — 9 февраля 1494.',
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur non, vel totam quaerat sequi iusto aperiam officiis architecto nemo numquam, excepturi voluptates aut labore beatae nam rerum dolorem amet ipsam.Similique, laboriosam! Nulla cupiditate laudantium voluptates ipsa eligendi neque! Obcaecati, tenetur sequi excepturi fugiat quas dignissimos doloremque sapiente molestiae aut omnis enim eveniet. Est, mollitia commodi aut eveniet eum laudantium.',
+        img: 'img/gallery/gal-full-4.jpg'
+    },
+    {
+        name: 'Французский художник 10',
+        years: '10 января 1448 — 10 февраля 1494.',
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur non, vel totam quaerat sequi iusto aperiam officiis architecto nemo numquam, excepturi voluptates aut labore beatae nam rerum dolorem amet ipsam.Similique, laboriosam! Nulla cupiditate laudantium voluptates ipsa eligendi neque! Obcaecati, tenetur sequi excepturi fugiat quas dignissimos doloremque sapiente molestiae aut omnis enim eveniet. Est, mollitia commodi aut eveniet eum laudantium.',
+        img: 'img/gallery/gal-full-5.jpg'
+    },
+    {
+        name: 'Французский художник 11',
+        years: '11 января 1448 — 11 февраля 1494.',
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur non, vel totam quaerat sequi iusto aperiam officiis architecto nemo numquam, excepturi voluptates aut labore beatae nam rerum dolorem amet ipsam.Similique, laboriosam! Nulla cupiditate laudantium voluptates ipsa eligendi neque! Obcaecati, tenetur sequi excepturi fugiat quas dignissimos doloremque sapiente molestiae aut omnis enim eveniet. Est, mollitia commodi aut eveniet eum laudantium.',
+        img: 'img/gallery/gal-full-6.jpg'
     }
 ]
 

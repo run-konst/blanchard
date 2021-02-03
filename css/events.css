@@ -68,8 +68,7 @@
 }
 
 .event__details:hover {
-    color: var(--purple-lighter);
-    border-color: var(--purple-lighter);
+    text-shadow: 0.5px 0;
 }
 
 .event__details:active {
@@ -82,12 +81,6 @@
     transform: translateX(-50%);
     color: var(--purple);
     transition: color .3s, background-color .3s;
-}
-
-.events__btn:focus {
-    outline: none;
-    border-color: var(--purple-darker);
-    color: var(--purple-lighter);
 }
 
 .events__btn:hover {

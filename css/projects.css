@@ -88,6 +88,16 @@
     opacity: 1;
 }
 
+.tooltip:focus {
+    outline: none;
+    background-image: url('../img/projects/tooltip_active.svg');
+}
+
+.tooltip:focus::after, .tooltip:focus::before {
+    visibility: visible;
+    opacity: 1;
+}
+
 /* Partners slider */
 
 .partners {

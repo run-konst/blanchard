@@ -12,6 +12,7 @@
 /* Social */
 
 .social {
+    margin: 0;
     display: flex;
 }
 
