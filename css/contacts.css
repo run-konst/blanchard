@@ -14,9 +14,9 @@
 }
 
 .contacts__content {
-    padding: 124px 122px 119px 50px;
-    margin-left: auto;
-    max-width: 572px;
+    padding: 124px 122px 124px calc((100vw - 1700px)/2);
+    margin-left: 50px;
+    max-width: 632px;
     display: flex;
     flex-direction: column;
 }
@@ -41,16 +41,18 @@
     margin-bottom: 38px;
 }
 
+.contacts__heading {
+    margin: 0;
+    margin-bottom: 16px;
+    font-size: 24px;
+    font-weight: 400;
+}
+
 /* Callback */
 
 .callback {
     display: flex;
     flex-direction: column;
-}
-
-.callback__heading {
-    font-size: 24px;
-    margin-bottom: 16px;
 }
 
 .validate-field {
@@ -92,21 +94,14 @@
 
 /* Contact us */
 
-.contact-us__heading {
-    display: block;
-    margin-bottom: 10px;
-    font-size: 24px;
-}
-
 .contact-us__items-container {
     display: flex;
-    margin-left: -5px;
 }
 
 .contact-us__item {
-    width: 50px;
-    height: 50px;
-    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
     background-repeat: no-repeat;
     background-size: 40px 40px;
     background-position: 50% 50%;
@@ -118,6 +113,10 @@
 
 .contact-us__telegram {
     background-image: url('../img/telegram.svg');
+}
+
+.contact-us__item:hover {
+    filter: drop-shadow(3px 3px 2px var(--purple));
 }
 
 /* Map */

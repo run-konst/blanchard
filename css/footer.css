@@ -40,3 +40,7 @@
 .social__fb {
     background-image: url('../img/social/fb.svg');
 }
+
+.social__link:hover {
+    filter: drop-shadow(3px 3px 2px var(--purple));
+}
