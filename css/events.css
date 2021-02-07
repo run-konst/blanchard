@@ -22,7 +22,8 @@
 .event__content {
     display: flex;
     flex-direction: column;
-    padding: 13px 19px 0 50px;
+    padding: 13px 19px 42px 50px;
+    height: 100%;
 }
 
 .event__img {
@@ -59,8 +60,6 @@
 .event__details {
     align-self: flex-start;
     margin-top: auto;
-    margin-bottom: 42px;
-    margin-left: 50px;
     line-height: 26px;
     color: var(--purple);
     border-bottom: 1px solid var(--purple);

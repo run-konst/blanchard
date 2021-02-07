@@ -14,8 +14,7 @@
 }
 
 .contacts__content {
-    padding: 124px 122px 124px calc((100vw - 1700px)/2);
-    margin-left: 50px;
+    padding: 124px 122px 124px calc((100vw - 1600px)/2);
     max-width: 632px;
     display: flex;
     flex-direction: column;
